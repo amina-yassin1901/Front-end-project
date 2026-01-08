@@ -58,9 +58,18 @@ a {
   align-items: center;
 }
 
-.mainSvg {
+.icon-mainSvg {
   width: 94px;
   height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #f64060;
+}
+
+.icon-language {
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +100,8 @@ a {
   padding-bottom: 13px;
 }
 
-.search {
+.icon-search {
+  fill: #707070;
   width: 22px;
   height: 22px;
 }
@@ -106,7 +116,7 @@ a {
   padding-right: 11px;
 }
 
-.searchWhite {
+.icon-searchWhite {
   background-color: #f65858;
   border-radius: 0 8px 8px 0;
   width: 42px;
