@@ -163,6 +163,11 @@ a {
 }
 
 @media (max-width: 1024px) {
+  .container {
+    padding-left: 79px;
+    padding-right: 79px;
+  }
+
   body {
     max-width: 1024px;
   }
@@ -218,6 +223,10 @@ a {
     font-size: 12px;
     line-height: 200%;
   }
+  .container {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
   .lastHeaderContainer {
     font-weight: 400;
     font-size: 12px;
@@ -243,7 +252,6 @@ a {
   display: flex;
   justify-content: start;
   gap: 54px;
-  align-items: center;
   width: 100%;
 }
 .heroAbout {
@@ -279,6 +287,12 @@ a {
     gap: 10px;
     padding-top: 30px;
     padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .heroAbout {
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -297,3 +311,122 @@ a {
   }
 }
 /* /////////////////////// */
+.eventSection {
+  width: 100%;
+  padding-top: 28px;
+}
+.eventsToolbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.eventsToolbarLeft {
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+}
+.eventsToolbarTitle {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 129%;
+  white-space: nowrap;
+}
+.eventsToolbarLocation {
+  border-radius: 8px;
+  max-width: 239px;
+  width: 100%;
+  background-color: rgba(151, 202, 209, 0.12);
+  padding: 12px 12px 10px 12px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+}
+.eventsToolbarText {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #00798a;
+}
+.icon-link {
+  width: 22px;
+  height: 22px;
+}
+.eventsToolbarAll {
+  color: #00798a;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .eventSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .eventsToolbarTitle {
+    font-size: 20px;
+    line-height: 123%;
+  }
+  .eventsToolbarLocation {
+    border-radius: 5px;
+  }
+  .eventsToolbarText {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .eventSection {
+    padding-top: 0;
+  }
+  .eventsToolbarAll {
+    display: none;
+  }
+}
+
+.eventsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 36px;
+  justify-content: center;
+  align-items: center;
+}
+.eventsImg {
+  width: 272px;
+  height: 153px;
+  border-radius: 8px;
+}
+.eventsItem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 272px;
+}
+.eventsInfo {
+}
+.date {
+}
+.eventsTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+}
+.eventsCategory {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  color: #707070;
+  display: flex;
+  gap: 5px;
+}
+.category {
+}
+.distance {
+}
+.type {
+}
+.attendees {
+}
