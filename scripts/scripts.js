@@ -106,17 +106,105 @@ eventsStore.forEach((item) => {
     item.description
   }" />
           <div class="eventsInfo">
+          <div class="eventsdateIcon">
+          <svg class="icon-date"><use href="assets/icons/sprite.svg#icon-date"></use></svg>
             <p class="date">${formattedDate}</p>
+            </div>
             <h4 class="eventsTitle">${item.title}</h4>
             <div class="eventsCategory">
               <p class="category">${item.category}</p>
               <p class="distance">(${item.distance} km)</p>
             </div>
+            <div class="eventsTypeIcon">
+            <svg class="icon-online"><use href="assets/icons/sprite.svg#icon-online"></use></svg>
             <p class="type">${item.type}</p>
+            </div>
             <p class="attendees">${item.attendees ?? ""}</p>
           </div>
         `;
   eventsList.appendChild(li);
+});
+
+const listOnline = document.querySelector(".listOnline");
+const eventsStore2 = [
+  {
+    title: "INFJ Personality Type - Coffee Shop Meet & Greet",
+    description: "Being an INFJ",
+    date: new Date(2024, 2, 23, 15),
+    image:
+      "https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1037&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%201037w ",
+    type: "offline",
+    attendees: "99 attendees",
+    category: "Hobbies and Passions",
+    distance: 50,
+  },
+  {
+    title:
+      "NYC AI Users - AI Tech Talks, Demo & Social: RAG Search and Customer Experience",
+    description: "New York AI Users",
+    date: new Date(2024, 2, 23, 11, 30),
+    image:
+      "https://images.unsplash.com/photo-1696258686454-60082b2c33e2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ",
+    type: "offline",
+    attendees: "43 attendees",
+    category: "Technology",
+    distance: 25,
+  },
+  {
+    title: "Book 40+ Appointments Per Month Using AI and Automation",
+    description: "New Jersey Business Network",
+    date: new Date(2024, 2, 16, 14),
+    image:
+      "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    type: "online",
+    category: "Technology",
+    distance: 10,
+  },
+  {
+    title: "Dump writing group weekly meetup",
+    description: "Dump writing group",
+    date: new Date(2024, 2, 13, 11),
+    image:
+      "https://plus.unsplash.com/premium_photo-1678453146992-b80d66df9152?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    type: "online",
+    attendees: "77 attendees",
+    category: "Business",
+    distance: 100,
+  },
+];
+
+eventsStore2.forEach((item) => {
+  const li = document.createElement("li");
+  const formattedDate = item.date.toLocaleString("en-US", {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+  li.classList.add("eventsItem");
+  li.innerHTML = `
+          <img class="eventsImg" src="${item.image}" alt="${
+    item.description
+  }" />
+          <div class="eventsInfo">
+          <div class="eventsdateIcon">
+          <svg class="icon-date"><use href="assets/icons/sprite.svg#icon-date"></use></svg>
+            <p class="date">${formattedDate}</p>
+            </div>
+            <h4 class="eventsTitle">${item.title}</h4>
+            <div class="eventsCategory">
+              <p class="category">${item.category}</p>
+              <p class="distance">(${item.distance} km)</p>
+            </div>
+            <div class="eventsTypeIcon">
+            <svg class="icon-online"><use href="assets/icons/sprite.svg#icon-online"></use></svg>
+            <p class="type">${item.type}</p>
+            </div>
+            <p class="attendees">${item.attendees ?? ""}</p>
+          </div>
+        `;
+  listOnline.appendChild(li);
 });
 
 // const filters = [
