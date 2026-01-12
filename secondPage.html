@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="headerContainer">
+        <a href="index.html">
+          <svg class="icon-mainSvg">
+            <use href="assets/icons/sprite.svg#icon-mainSvg"></use>
+          </svg>
+        </a>
+        <div class="searchContainer">
+          <div class="inputContainer">
+            <svg class="icon-search">
+              <use href="assets/icons/sprite.svg#icon-search"></use>
+            </svg>
+
+            <input
+              class=""
+              type="text"
+              name="events"
+              placeholder="Search events"
+            />
+          </div>
+          <input
+            class="searchInput"
+            type="text"
+            name="location"
+            value="Mountain View, CA"
+          />
+          <svg class="icon-searchWhite">
+            <use href="assets/icons/sprite.svg#icon-searchWhite"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="lastHeaderContainer">
+        <div class="languageContainer">
+          <svg class="icon-language">
+            <use href="assets/icons/sprite.svg#icon-language"></use>
+          </svg>
+          <p class="language">English</p>
+        </div>
+        <a href="#">Log in</a>
+        <button class="btnSign" type="button">Sign up</button>
+      </div>
+    </header>
+    <div class="searchMobile inputContainer">
+      <div class="headerFlex">
+        <svg class="icon-search">
+          <use href="assets/icons/sprite.svg#icon-search"></use>
+        </svg>
+
+        <input
+          class="inp"
+          type="text"
+          name="events"
+          placeholder="Search events"
+        />
+      </div>
+
+      <svg class="icon-searchWhite">
+        <use href="assets/icons/sprite.svg#icon-searchWhite"></use>
+      </svg>
+    </div>
+    <section class="container nearSection">
+      <div>
+        <div>
+          <h2 class="nearTitle">Events near New York, NY</h2>
+          <p class="nearText">Events</p>
+          <div class="filters">
+            <div class="filter" data-type="day">
+              <button class="filter-btn">
+                <span class="filter-text">Any date</span>
+                <svg class="iconDown" width="14" height="14">
+                  <use href="assets/icons/sprite.svg#down"></use>
+                </svg>
+              </button>
+              <ul class="filter-list"></ul>
+            </div>
+
+            <div class="filter" data-type="type">
+              <button class="filter-btn">
+                <span class="filter-text">Any type</span>
+                <svg class="iconDown" width="14" height="14">
+                  <use href="assets/icons/sprite.svg#down"></use>
+                </svg>
+              </button>
+              <ul class="filter-list"></ul>
+            </div>
+
+            <div class="filter" data-type="distance">
+              <button class="filter-btn">
+                <span class="filter-text">Any distance</span>
+                <svg class="iconDown" width="14" height="14">
+                  <use href="assets/icons/sprite.svg#down"></use>
+                </svg>
+              </button>
+              <ul class="filter-list"></ul>
+            </div>
+
+            <div class="filter" data-type="category">
+              <button class="filter-btn">
+                <span class="filter-text">Any category</span>
+                <svg class="iconDown" width="14" height="14">
+                  <use href="assets/icons/sprite.svg#down"></use>
+                </svg>
+              </button>
+              <ul class="filter-list"></ul>
+            </div>
+          </div>
+        </div>
+        <ul class="nearList"></ul>
+      </div>
+      <div class="mapsContainer">
+        <p class="mapsText">Find events near</p>
+        <h3 class="mapsTitle">New York, NY</h3>
+        <div class="bgImageMap">
+          <svg width="15" height="15" class="exit">
+            <use href="assets/icons/sprite.svg#Button"></use>
+          </svg>
+          <button class="btnMap">
+            Browse in map
+            <svg width="18" height="18">
+              <use href="assets/icons/sprite.svg#expandMapIcon" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footerStartContainer">
+        <h2 class="footerTitle">Create your own Meetup group.</h2>
+        <button class="footerBtn" type="button">Get Started</button>
+      </div>
+      <div class="footerListsContainer">
+        <ul class="footerList">
+          <li class="footerItem">
+            <h3 class="footerListTitle">Your Account</h3>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Sign up</a>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Log in</a>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Help</a>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Become an Affiliate</a>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <li class="footerItem">
+            <h3 class="footerListTitle">Discover</h3>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Groups</a>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Calendar</a>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Topics</a>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Cities</a>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Online Events</a>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Local Guides</a>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Make Friends</a>
+          </li>
+        </ul>
+        <ul class="footerList">
+          <li class="footerItem">
+            <h3 class="footerListTitle">Meetup</h3>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">About</a>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Blog</a>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Meetup Pro</a>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Careers</a>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Apps</a>
+          </li>
+          <li class="footerItem">
+            <a class="footerLinkItem" href="">Podcast</a>
+          </li>
+        </ul>
+      </div>
+      <h3 class="linkTitle">Follow us</h3>
+      <div class="mainIconContainer">
+        <div class="footerIconContainer">
+          <svg class="icon-Facebook iconLink">
+            <use href="assets/icons/sprite.svg#icon-Facebook"></use>
+          </svg>
+          <svg class="icon-Twitter iconLink">
+            <use href="assets/icons/sprite.svg#icon-Twitter"></use>
+          </svg>
+          <svg class="icon-YouTube iconLink">
+            <use href="assets/icons/sprite.svg#icon-YouTube"></use>
+          </svg>
+          <svg class="icon-Instagram iconLink">
+            <use href="assets/icons/sprite.svg#icon-Instagram"></use>
+          </svg>
+          <svg class="icon-TikTok iconLink">
+            <use href="assets/icons/sprite.svg#icon-TikTok"></use>
+          </svg>
+        </div>
+        <div class="footerimg">
+          <img
+            class="footerImg"
+            src="assets/images/download_en-US.svg.png"
+            alt=""
+          />
+          <img class="footerImg" src="assets/images/Group.png" alt="" />
+        </div>
+      </div>
+      <ul class="privacyList">
+        <li class="privacyItem">
+          <h3 class="privacyTitle">© 2024 Meetup</h3>
+        </li>
+        <li class="privacyItem">
+          <p class="privacyText">Terms of Service</p>
+        </li>
+        <li class="privacyItem">
+          <p class="privacyText">Privacy Policy</p>
+        </li>
+        <li class="privacyItem">
+          <p class="privacyText">Do Not Sell or Share My Personal Data</p>
+        </li>
+        <li class="privacyItem">
+          <p class="privacyText">Cookie Policy</p>
+        </li>
+        <li class="privacyItem">
+          <p class="privacyText">Help</p>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="scripts/scriptsSecond.js"></script>
+  </body>
+</html>
