@@ -873,3 +873,90 @@ a {
     border-radius: 5px;
   }
 }
+/* //////////////////////// */
+.friendshipsSection {
+  width: 100%;
+}
+.friendshipsTitle {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 129%;
+  margin-bottom: 16px;
+}
+.friendshipsText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #707070;
+  margin-bottom: 28px;
+  max-width: 873px;
+}
+.friendshipList {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 64px;
+  flex-wrap: wrap;
+}
+.friendshipItem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 376px;
+}
+.friendshipImg {
+  width: 376px;
+  height: 191px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.friendshipTitleItem {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  max-width: 310px;
+}
+.friendshipTextItem {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #707070;
+}
+.friendshipLink {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #00798a;
+}
+@media (max-width: 767px) {
+  .friendshipsText {
+    display: none;
+  }
+  .friendshipsTitle {
+    margin-bottom: 27px;
+  }
+  .friendshipImg {
+    border-radius: 8px;
+    width: 351px;
+    height: auto;
+  }
+  .friendshipTitleItem {
+    font-size: 16px;
+    line-height: 168%;
+    max-width: 280px;
+  }
+  .friendshipTextItem {
+    font-size: 12px;
+    line-height: 192%;
+    max-width: 280px;
+  }
+  .friendshipLink {
+    font-size: 12px;
+    line-height: 192%;
+  }
+  .friendshipList {
+    margin-bottom: 125px;
+  }
+}
