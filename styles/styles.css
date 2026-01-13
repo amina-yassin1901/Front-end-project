@@ -1119,7 +1119,7 @@ a {
   padding-bottom: 101px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: start;
 }
 
@@ -1231,6 +1231,7 @@ a {
     padding-left: 12px;
     padding-bottom: 67px;
     padding-right: 10px;
+    justify-content: center;
   }
   .eventsImg1 {
     border-radius: 5px;
