@@ -179,7 +179,15 @@ filterBlocks.forEach((block) => {
     filterBlocks.forEach((f) => {
       if (f !== block) f.classList.remove("open");
     });
-    block.classList.toggle("open");
+    const isOpen = block.classList.toggle("open");
+
+    if (isOpen && window.innerWidth <= 767) {
+      const rect = button.getBoundingClientRect();
+
+      list.style.top = `${rect.bottom + 6}px`;
+      list.style.left = `${rect.left}px`;
+      list.style.minWidth = `${rect.width}px`;
+    }
   });
 
   list.addEventListener("click", (e) => {
